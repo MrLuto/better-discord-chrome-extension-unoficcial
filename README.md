@@ -4,7 +4,6 @@
 this is a chrome extension im currently working on that will mimic the features of BD.
 
 
-
 ## Acknowledgements
 
  - [better discord](https://betterdiscord.app/)
