@@ -37,8 +37,10 @@ section.message {
   margin: 0;
   outline: 0;
   padding: 5px;
-  width: auto;
-  height: auto;
+  max-height: 600px;
+  min-height: 350px;
+  max-width: 500px;
+  min-width: 400px;
 }
 
 .footer {
@@ -56,8 +58,4 @@ button {
   padding: 5px 10px;
   font-size: 90%;
   cursor: pointer;
-}
-
-textarea {
-  /*display: none;*/
 }

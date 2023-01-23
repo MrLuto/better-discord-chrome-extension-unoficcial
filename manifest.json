@@ -1,26 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "BetterDiscord extension",
-  "version": "1.1",
-  "description": "BetterDiscord inside a extension",
-  //"icons": {
-  //  "16": "src/icons/16.png",
-  //  "48": "src/icons/48.png",
-  //  "128": "src/icons/128.png",
-  //  "256": "src/icons/256.png"
-  //},
+  "name": "Better Discord Web unofficial",
+  "short_name": "BD Web unofficial",
+  "version": "1.0",
+  "description": "Better Discord Web unofficial",
+  "icons": {
+    "16": "src/icons/16.png",
+    "48": "src/icons/48.png",
+    "128": "src/icons/128.png",
+    "256": "src/icons/256.png"
+  },
+  "background": {
+    "service_worker": "src/background/index.js",
+    "type": "module"
+  },
   "action": {
     "default_popup": "src/popup/index.html"
   },
-  "permissions": ["activeTab", "storage"],
-
-  "content_scripts": [{
-    "matches": ["https://discord.com/*", "http://discord.com/*"],
-    "js": [
-      "src/lib/permissions.js",
-      "src/lib/persist.js",
-      "src/lib/origins.js",
-      "src/background/index.js"
-    ]
-}]
+  "optional_host_permissions": ["http://*/", "https://*/"],
+  "permissions": ["activeTab", "scripting", "storage"]
 }
