@@ -17,8 +17,12 @@ const permissionStep = function (domain) {
       mainStep(domain);
     });
   });
-
-  $(".request-permission").style.display = "block";
+  if (domain === "discord.com" || domain === "discordapp.com") {
+    $(".request-permission").style.display = "block";
+  } else {
+    $(".Wrong-site").style.display = "block";
+    $(".footer").style.display = "none";
+  }
 };
 
 const mainStep = async function (domain) {
