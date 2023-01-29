@@ -5,13 +5,13 @@
   "version": "1.2",
   "description": "Better Discord Web unofficial",
   "icons": {
-    "16": "src/icons/logo.png",
-    "48": "src/icons/logo.png",
-    "128": "src/icons/logo.png",
-    "256": "src/icons/logo.png"
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png",
+    "256": "logo.png"
   },
   "background": {
-    "service_worker": "src/background/index.js",
+    "service_worker": "src/background.js",
     "type": "module"
   },
   "action": {

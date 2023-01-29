@@ -1,6 +1,6 @@
-import "../lib/origins.js";
-import "../lib/permissions.js";
-import "../lib/persist.js";
+import "./origins.js";
+import "./permissions.js";
+import "./persist.js";
 
 const { Origins, Permissions, Persist } = globalThis;
 
@@ -40,7 +40,7 @@ const initTabs = async function (tabs) {
 const injectTabCode = async function (tab) {
   await chrome.scripting.executeScript({
     target: { tabId: tab.id },
-    files: ["src/content/index.js"],
+    files: ["src/content.js"],
   });
 };
 
