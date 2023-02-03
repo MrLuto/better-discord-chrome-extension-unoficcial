@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Better Discord Web unofficial",
   "short_name": "BD Web unofficial",
-  "version": "1.2",
+  "version": "1.2.1",
   "description": "Better Discord Web unofficial",
   "icons": {
     "16": "logo.png",

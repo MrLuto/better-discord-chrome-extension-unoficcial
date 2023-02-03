@@ -11,8 +11,10 @@
 
     <section class="Wrong-site message">
       <p class="request-permission-p"></p>
+      <h3>Error 418</h3>
+      <img src="https://cdn-icons-png.flaticon.com/128/1223/1223604.png" class="teapot-img" alt="I am a teapot">
       <p>
-        this app does not work on this site
+        This Extension is only available on the Discord Web app. Please switch to the Discord Web app to access this functionality.
       </p>
     </section>
 
@@ -21,7 +23,7 @@
       <p>
         <button
           class="request-permission-button"
-          data-i18n="grant_permission"
+          data-i18n="grant permission"
         ></button>
       </p>
     </section>
@@ -29,12 +31,12 @@
     <section class="main">
       <label>
         <span class="main-textarea-label"></span>
+        <label for="css-input">paste here the content of a Theme file: </label><br>
+        <input type="file" id="css-input" style="display:none;" accept="text/css">
         <textarea
           autofocus
           spellcheck="false"
           class="main-textarea"
-          placeholder="paste here the content of a [name].theme.css file"
-          maxlength="7500"
         ></textarea>
       </label>
     </section>
